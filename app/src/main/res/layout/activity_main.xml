@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#007bff"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textExamen"
+        android:layout_width="384dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:text="Examen de Admisión 2023"
+        android:textColor="#f8f9fa"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/textFormulario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Formulario de Registro"
+        android:textColor="#f8f9fa"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textExamen"
+        app:layout_constraintTop_toBottomOf="@+id/textExamen" />
+
+    <TextView
+        android:id="@+id/textNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/TextApeNom"
+        android:textColor="#f8f9fa"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textFormulario"
+        app:layout_constraintTop_toBottomOf="@+id/textFormulario" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/baseline_app_registration_24"
+        android:ems="10"
+        android:hint="Tu Respuesta"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textNombre"
+        app:layout_constraintTop_toBottomOf="@+id/textNombre" />
+
+    <TextView
+        android:id="@+id/textCorreo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/TextCorreoE"
+        android:textColor="#f8f9fa"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextNombre"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+
+    <EditText
+        android:id="@+id/editTextCorreoE"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/baseline_email_24"
+        android:ems="10"
+        android:hint="Tu Respuesta"
+        android:inputType="textEmailAddress"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/textCorreo" />
+
+    <TextView
+        android:id="@+id/textclave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/TextClave"
+        android:textColor="#f8f9fa"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextCorreoE"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCorreoE" />
+
+    <EditText
+        android:id="@+id/editTextClave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/baseline_wifi_password_24"
+        android:ems="10"
+        android:hint="Tu Respuesta"
+        android:inputType="textPassword"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textclave"
+        app:layout_constraintTop_toBottomOf="@+id/textclave" />
+
+    <TextView
+        android:id="@+id/textFechaNan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/TextFechaNaci"
+        android:textColor="#f8f9fa"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextClave"
+        app:layout_constraintTop_toBottomOf="@+id/editTextClave" />
+
+    <TextView
+        android:id="@+id/textFech"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/TextFech"
+        android:textColor="#f8f9fa"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/textFechaNan"
+        app:layout_constraintTop_toBottomOf="@+id/textFechaNan" />
+
+    <EditText
+        android:id="@+id/editTextFecha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/baseline_calendar_month_24"
+        android:ems="10"
+        android:hint="dd/mm/aaaa"
+        android:inputType="date"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textFech"
+        app:layout_constraintTop_toBottomOf="@+id/textFech" />
+
+    <TextView
+        android:id="@+id/TextCarrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/TextCarrera"
+        android:textColor="#f8f9fa"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextFecha"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFecha" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroupCarrera"
+        android:layout_width="193dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/TextCarrera"
+        app:layout_constraintTop_toBottomOf="@+id/TextCarrera">
+
+        <RadioButton
+            android:id="@+id/radioButtonSistemas"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="@string/RadioButton_IngenieriaSistemas"
+            android:textColor="#f8f9fa"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAmbiental"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="@string/RadioButton_IngenieriaAmbiental"
+            android:textColor="#f8f9fa"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMecanica"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="@string/RadioButton_IngenieriaMecanica"
+            android:textColor="#f8f9fa"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAdministracion"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="@string/RadioButton_Administracion"
+            android:textColor="#f8f9fa"
+            android:textSize="10sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textMedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/TextMedioE"
+        android:textColor="#f8f9fa"
+        app:layout_constraintStart_toStartOf="@+id/RadioGroupCarrera"
+        app:layout_constraintTop_toBottomOf="@+id/RadioGroupCarrera" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupMedio"
+        android:layout_width="366dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/textMedio"
+        app:layout_constraintTop_toBottomOf="@+id/textMedio">
+
+        <CheckBox
+            android:id="@+id/checkBoxRadio"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:text="@string/checkBox_Radio"
+            android:textColor="#f8f9fa"
+            android:textSize="10sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxInternet"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:text="@string/checkBox_Internet"
+            android:textColor="#f8f9fa"
+            android:textSize="10sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAmigo"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="@string/checkBox_Amigo"
+            android:textColor="#f8f9fa"
+            android:textSize="10sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPublicidad"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:text="@string/checkBox_Publicidad"
+            android:textColor="#f8f9fa"
+            android:textSize="10sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#ffc107"
+        android:drawableLeft="@drawable/baseline_send_24"
+        android:text="@string/Button_Enviar"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupMedio"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupMedio" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintStart_toEndOf="@+id/TextCarrera"
+        app:layout_constraintTop_toTopOf="@+id/TextCarrera"
+        app:srcCompat="@drawable/checklist" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintStart_toEndOf="@+id/textMedio"
+        app:layout_constraintTop_toTopOf="@+id/textMedio"
+        app:srcCompat="@drawable/checklist" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

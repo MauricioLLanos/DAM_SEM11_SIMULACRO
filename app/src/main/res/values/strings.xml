@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DAM_MauricioLLanos</string>
+    <string name="TextApeNom">Apellidos y Nombre</string>
+    <string name="TextNomApellido">Nombre y Apellido</string>
+    <string name="TextCorreoE">Correo Electronico</string>
+    <string name="TextClave">Clave:</string>
+    <string name="TextFechaNaci">Fecha de Nacimiento</string>
+    <string name="TextFech">Fecha</string>
+    <string name="TextCarrera">Carrera</string>
+    <string name="RadioButton_IngenieriaSistemas">Ingenieria de Sistemas</string>
+    <string name="RadioButton_IngenieriaAmbiental">" Ingenieria Ambiental"</string>
+    <string name="RadioButton_IngenieriaMecanica">Ingenieria Mecanica</string>
+    <string name="RadioButton_Administracion">Administracion</string>
+    <string name="TextMedioE">¿Por qué medio se enteró de la convocatoria?</string>
+    <string name="checkBox_Radio">Radio</string>
+    <string name="checkBox_Internet">Internet</string>
+    <string name="checkBox_Amigo">Amigo</string>
+    <string name="checkBox_Publicidad">Publicidad</string>
+    <string name="Button_Enviar">Enviar</string>
+</resources>
